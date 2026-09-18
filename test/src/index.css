@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+body {
+  background: #020817;
+  color: #f8fafc;
+}
+
+.container {
+  background: #22c55e;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+@theme {
+  --spacing-1: 0.25rem;
+  --text-base: 1.5rem;
+  --font-script: Great Vibes, cursive;
+  --bgcolor: green;
+  --color-red-500: #f56565;
+}
+

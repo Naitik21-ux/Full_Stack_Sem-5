@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<a<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selectors Page</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            h2{
+                color: blue;
+                text-align: center;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+                font-style: italic;
+                text-decoration: underline;
+                letter-spacing: 5px;
+                word-spacing: 10px;
+                text-transform: uppercase;
+            }
+            input[type="email"]{
+                border: 2px solid blue;
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+            input[type="password"]{
+                border: 2px solid green;
+                padding: 9px;
+                margin: 15px;
+                border-radius: 8px;
+            }
+            li[data=mydata]{
+                background-color: yellow;
+                color: violet;
+            }
+            #myid{
+                background-color: red;
+                color: white;
+            }
+            .myclass{
+                background-color: green;
+                color: white;
+                font-style: italic;
+            }
+            section > h2{            /*Direct child selector*/
+                color: orange;
+            }
+            section h2{             /*Descendant selector*/
+                font-size: 30px;
+            }
+            h2 + p{                 /*Adjacent sibling selector*/
+                color: purple;
+            }
+            h2~p{                   /*General sibling selector*/
+                font-size: 20px;
+            }
+
+            button:hover{
+                background-color: blue;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            a:link{
+                color: greenyellow;
+            }
+            a:visited{
+                color: blue;
+            }
+            p:nth-child(3){                 /*pseudo-class:nth-child selector*/
+                color: lightblue;
+            }
+            p:has(span){                 /*pseudo-class:has selector*/
+                color: red;
+            }
+            :where(h1){                 /*pseudo-class:where selector*/
+                font-size: 45px;
+            }
+            :has(div){
+                color: green;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <h2>Selectors Example</h2>
+        <p>This is a simple test page.</p>
+        <ul>
+            <li data="mydata">Universal</li>
+            <li class="myclass">Element</li>
+            <li class="myclass">Class</li>
+            <li id="myid">ID</li>
+            <li>Attribute</li>
+            <li>Pseudo-class</li>
+            <li>Pseudo-element</li>
+            <li>Combinator</li>
+        </ul>
+
+        <section>
+            <h2>Heading</h2>
+            <p>para2</p>
+            <p>para3</p>
+            <div>
+                <h2>Subheading</h2>
+            </div>
+        </section>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button>Hurry Click!!</button>
+        <a href="shadow.html">Go to Shadow Page</a>
+        <p>para
+            <span>1</span>
+
+        </p>
+        <div>
+            <h1>subes</h1>
+            <h1>content</h1>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            outline: 2px solid red;
+        }
+        .container>div{
+            background-color: black;
+            color:aliceblue;
+            padding: 20px;
+            height: 90px;
+            flex-basis: 100px;
+            
+        }
+        #box1{
+            
+            background-color: blue;
+            flex-grow: 2;
+            flex-basis: 200px;
+        }
+        #box2{
+            
+            background-color: green;
+            flex-shrink: 1;
+        }
+        #box3{
+            flex: 3;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">hello </div>
+        <div class="box box2">doing well </div>
+        <div class="box box3">world</div>
+    </div>
+</body>
+</html>

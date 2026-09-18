@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family: Arial;
+    color: white;
+}
+
+.page {
+    width: 90%;
+    min-height: 90vh;
+    margin: 30px auto;
+
+    background: linear-gradient(#1725a0, #000 40%);
+    border: 1px solid #333;
+    box-shadow: 0 0 50px blue;
+}
+
+nav {
+    margin: 25px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #292da5;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 12px;
+}
+
+button {
+    background: #111;
+    color: white;
+    border: 1px solid #555;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.left {
+    width: 45%;
+}
+
+.tag {
+    background: #3155d8;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin: 30px 0 15px;
+}
+
+.left > p {
+    color: #888;
+    font-size: 13px;
+}
+
+.contact {
+    margin-top: 180px;
+    color: #aaa;
+}
+
+.contact p {
+    margin: 20px 0;
+    font-size: 12px;
+}
+
+.form {
+    width: 45%;
+    padding: 25px;
+
+    background: #090909;
+    border: 1px solid #444;
+    border-radius: 15px;
+}
+
+.form h2 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.form > p {
+    color: #777;
+    font-size: 11px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    color: #aaa;
+    font-size: 10px;
+    margin: 10px 0 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    background: black;
+    color: white;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row div {
+    width: 50%;
+}
+
+textarea {
+    height: 100px;
+}
+
+.form button {
+    margin-top: 20px;
+}
